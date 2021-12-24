@@ -58,7 +58,7 @@ class dummyApiController extends Controller
     public function savedata(Request $req)
     {
         $rules = array(
-            "model" => "required|min:2|max:5",
+            "model" => "required|min:3|max:5",
         );
         $validator = Validator::make($req->all(), $rules);
         if ($validator->fails()) {
