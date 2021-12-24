@@ -21,3 +21,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get("/getdata", [dummyApiController::class, 'getdata']);
 Route::post("/postdata", [dummyApiController::class, 'postdata']);
+Route::put("/putdata", [dummyApiController::class, 'putdata']);
+Route::get("/search/{name}", [dummyApiController::class, 'search']);
+Route::delete("/delete", [dummyApiController::class, 'delete']);
