@@ -19,4 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get("data", [dummyApiController::class, 'getData']);
+Route::get("/getdata", [dummyApiController::class, 'getdata']);
+Route::post("/postdata", [dummyApiController::class, 'postdata']);
